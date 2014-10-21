@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+@* ng-app: name ofthe module not the global variable *@
+<html lang="en" ng-app="eventsApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Registration</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/underscore.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/controller/eventController.js"></script>
+</body>
+</html>
